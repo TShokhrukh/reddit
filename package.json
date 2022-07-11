@@ -1,6 +1,6 @@
 {
   "name": "reddit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -16,6 +16,7 @@
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "ky": "^0.31.0",
+    "ramda": "^0.28.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
@@ -49,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@types/ramda": "^0.28.15",
     "@typescript-eslint/eslint-plugin": "^5.30.3",
     "@typescript-eslint/parser": "^5.30.3",
     "eslint": "^8.19.0",
