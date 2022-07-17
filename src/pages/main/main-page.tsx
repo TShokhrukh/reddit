@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function MainPage() {
+export function MainPage() {    
   return (
     <div>
       MainPage
