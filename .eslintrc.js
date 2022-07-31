@@ -24,5 +24,6 @@ module.exports = {
     ],
     "rules": {
         "semi": "error",
+        "quotes": [2, "single"]
     }
 };
