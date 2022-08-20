@@ -1,9 +1,11 @@
 /* eslint-disable react/display-name */
-import React from 'react';
-import { MainPage } from 'pages';
+import React, { lazy } from 'react';
 import { Routes, Route } from 'react-router';
-import { LoginPage } from 'pages/login';
 import { WithLogin } from 'components/WithLogin';
+import { Loadable } from 'components/Loadable';
+
+const LoginPage = Loadable(lazy(() => import('pages/login').then(c => ({ default: c.LoginPage }))));
+const MainPage = Loadable(lazy(() => import('pages/main').then(c => ({ default: c.MainPage }))));
 
 export function ThemeRoutes() {
   return (
