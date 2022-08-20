@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from 'react';
 import { MainPage } from 'pages';
 import { Routes, Route } from 'react-router';
