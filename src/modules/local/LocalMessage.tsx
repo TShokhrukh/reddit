@@ -9,5 +9,5 @@ interface IProps {
 export function LocalMessage ({ code, ...others }: IProps) {
   const msg = useMessage(code, others);
 
-  return <>{msg}</>;
+  return <React.Fragment>{msg}</React.Fragment>;
 }

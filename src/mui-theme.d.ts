@@ -9,12 +9,12 @@ declare module '@mui/material/styles' {
     
   // }
 
-  interface PaletteColorOptions extends MUI.PaletteColorOptions {
-    lighter?: string
-    light?: string
-    main?: string
-    dark?: string
-    darker?: string
-    contrastText?: string
-  }
+  // interface PaletteColorOptions extends MUI.PaletteColorOptions {
+  //   lighter?: string
+  //   light?: string
+  //   main?: string
+  //   dark?: string
+  //   darker?: string
+  //   contrastText?: string
+  // }
 }
