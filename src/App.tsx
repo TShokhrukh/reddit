@@ -6,8 +6,11 @@ import { theme } from 'theme';
 import { CssBaseline } from '@mui/material';
 import { LocalProvider } from 'modules/local';
 import * as lang from './resources/lang';
+import { useURLToken } from 'hooks';
 
 export function App() {
+  const [ token ] = useURLToken();
+
   return (
     <LocalProvider lang='ru' messages={lang.ru}>
       <BrowserRouter>
