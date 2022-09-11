@@ -1,11 +1,13 @@
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import { isDev } from 'common/root';
-import logger from 'redux-logger';
+import { RedditStore } from './reddit';
+import { observable } from 'mobx';
+import { IRedditStore } from 'types';
 
-export const store = configureStore({
-  reducer: {
-    
-  },
-  middleware: getDefaultMiddleware().concat(isDev() ? [logger] : []),
-  devTools: isDev()
-});
+export class Store {
+  @observable public reddit: IRedditStore;
+
+  constructor () {
+    this.reddit = new RedditStore();
+  }
+}
+
+export const store = new Store();
