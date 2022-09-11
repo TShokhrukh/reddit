@@ -6,7 +6,7 @@ export function useURLToken() {
   const [searchParams] = useSearchParams();
   const code = searchParams.get('code');
 
-  if (code) {
+  if (code && !token) {
     setToken(code);
   }
 

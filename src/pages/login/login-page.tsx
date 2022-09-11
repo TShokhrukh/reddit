@@ -6,7 +6,7 @@ import { LocalMessage } from 'modules/local';
 
 export function LoginPage() {
   const theme = useTheme();
-  // TODO add scopes list
+  // TODO: add scopes list
   return (
     <AuthWrapper>
       <Typography variant="h5" textAlign="center" color={theme.palette.secondary.main} gutterBottom>
