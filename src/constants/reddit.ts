@@ -1,6 +1,7 @@
 import { REDDIT_APP_ID } from './env';
 
 export const REDDIT_URL = 'https://www.reddit.com';
+export const REDDIT_API_URL = 'https://www.reddit.com/api/v1';
 
 // export const REDDIT_DURATION: 'temporary'|'permanent' = 'permanent';
 
