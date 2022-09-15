@@ -1,5 +1,5 @@
 import { RedditStore } from './reddit';
-import { observable } from 'mobx';
+import { observable, makeObservable } from 'mobx';
 import { IRedditStore } from 'types';
 
 export class Store {
@@ -7,6 +7,8 @@ export class Store {
 
   constructor () {
     this.reddit = new RedditStore();
+
+    makeObservable(this);
   }
 }
 
