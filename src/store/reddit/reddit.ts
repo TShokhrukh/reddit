@@ -2,9 +2,9 @@ import { action, observable, makeObservable, computed } from 'mobx';
 import { IRedditStore } from 'types';
 
 export class RedditStore implements IRedditStore {
-  @observable public token: string;
-  @observable public date: number;
-  @observable public limit: number;
+  @observable public token;
+  @observable public date;
+  @observable public limit;
 
   constructor () {
     this.token = '';
@@ -14,7 +14,7 @@ export class RedditStore implements IRedditStore {
     makeObservable(this);
   }
 
-  @computed get isValid (): boolean {
+  @computed public get isValid (): boolean {
     return Date.now() - this.date < this.limit;
   }
 
